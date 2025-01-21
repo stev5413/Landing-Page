@@ -1,0 +1,1 @@
+This project will be to create a new git repository and landing page with the html and css learnt thus far.  The design and layout of the landing page is specified by TOP. 
