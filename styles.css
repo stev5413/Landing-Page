@@ -1,27 +1,25 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
 }
 
 .main-header {
    background-color: #1F2937;
 }
 
+.main-header > div {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .header {
     display: flex;
     justify-content: center;
     color: #F9FAF8;
-    margin:auto;
-    padding-top: 8px;
+    padding: 0 175px 8px 175px;
     align-content: center;
-    width: 900px;
-    height: 72px;
+    max-height: 72px;
 }
 
 .main {
@@ -29,10 +27,7 @@ body {
     justify-content: center;
     gap: 44px;
     background-color: #1F2937;
-    margin:auto;
-    width: 900px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 32px 175px 32px 175px;
 }
 
 .logo {
@@ -47,7 +42,7 @@ body {
 }
 
 .title {
-    align-self: center;
+    text-align: center;
 }
 
 .main-title {
@@ -74,30 +69,73 @@ body {
     justify-content: space-between;
 }
 
+.title {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
 .info-container {
     display: flex;
     justify-content: center;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.icon img {
+    max-width: 200px;
 }
 
 .icon {
     text-align: center;
-    width: 100px;
-    height: 100px;
+    font-size: 12px;
+    max-width: 200px;
 }
 
-.icon img {
-    max-width: 100%;
-    max-height: 100%;
-}
 button {
+    border-radius: 6px;
     color: white;
     background-color: #3882F6;
-    padding: 8px 20px;
+    padding:6px 20px;
+    flex-shrink: 0;
+}
+
+#btn-top {
+    border-style: none;
+}
+
+#btn-bottom {
+    border-color: #F9FAF8;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    padding: 48px 0 48px 0;
+}
+
+.quote {
+    font-size: 2rem;
+    font-style: italic;
+    color: #1F2937;
+    margin: auto;
+    max-width: 700px;
+}
+
+.cite {
+    font-weight: bold;
+    text-align: right;
+    max-width: 700px;
+    margin: auto;
 }
 
 .signup-container {
     display: flex;
-    justify-content: center;    
+    justify-content: space-between;
+    background-color: #3882F6;
+    border-radius: 0.25rem;  
+    padding: 12px 32px;
+    margin: 32px 175px 32px 175px;
+    padding: 20px;
 } 
 
 .footer {
